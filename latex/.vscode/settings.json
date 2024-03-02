@@ -1,0 +1,85 @@
+{
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.autoClean.run": "onSucceeded",
+  "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+  "latex-workshop.synctex.synctexjs.enabled": true,
+  "latex-workshop.latex.clean.fileTypes": [
+    "%DOCFILE%.aux",
+    "%DOCFILE%.bbl",
+    "%DOCFILE%.blg",
+    "%DOCFILE%.dvi",
+    "%DOCFILE%.idx",
+    "%DOCFILE%.ind",
+    "%DOCFILE%.lof",
+    "%DOCFILE%.lot",
+    "%DOCFILE%.out",
+    "%DOCFILE%.toc",
+    "%DOCFILE%.acn",
+    "%DOCFILE%.acr",
+    "%DOCFILE%.alg",
+    "%DOCFILE%.glg",
+    "%DOCFILE%.glo",
+    "%DOCFILE%.gls",
+    "%DOCFILE%.fls",
+    "%DOCFILE%.log",
+    "%DOCFILE%.fdb_latexmk",
+    "%DOCFILE%.snm",
+    "%DOCFILE%.synctex(busy)",
+    "%DOCFILE%.synctex.gz(busy)",
+    "%DOCFILE%.nav",
+    "%DOCFILE%.vrb",
+  ],
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "lualatex",
+      "command": "lualatex",
+      "args": [
+        "--cmdx",
+        "--synctex=1",
+        "--interaction=nonstopmode",
+        "--file-line-error",
+        "-halt-on-error",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "platex",
+      "command": "platex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-shell-escape",
+        "--shell-escape",
+        "-kanji=utf8",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "dvipdfmx",
+      "command": "dvipdfmx",
+      "args": ["%DOCFILE%.dvi"]
+    },
+    {
+      "name": "empty",
+      "command": "echo",
+      "args": []
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "lualatex",
+      "tools": ["lualatex", "lualatex", "empty"]
+    },
+    {
+      "name": "platex -> dvipdfmx",
+      "tools": ["platex", "platex", "dvipdfmx"]
+    }
+  ],
+  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.intellisense.includegraphics.preview.enabled": true,
+  "latex-workshop.hover.preview.mathjax.extensions": ["physics"],
+  "latex-workshop.intellisense.package.enabled": true,
+  "latex-workshop.mathpreviewpanel.cursor.enabled": true,
+}

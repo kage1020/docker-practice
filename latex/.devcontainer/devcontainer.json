@@ -1,0 +1,30 @@
+{
+  "name": "LaTeX",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "workspace",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "ms-vscode-remote.remote-containers",
+        "ms-azuretools.vscode-docker",
+        "hediet.vscode-drawio",
+        "nopeslide.vscode-drawio-plugin-mermaid",
+        "usernamehw.errorlens",
+        "mhutchie.git-graph",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "GitHub.vscode-pull-request-github",
+        "seatonjiang.gitmoji-vscode",
+        "oderwat.indent-rainbow",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "MS-CEINTL.vscode-language-pack-ja",
+        "torn4dom4n.latex-support",
+        "James-Yu.latex-workshop",
+        "shd101wyy.markdown-preview-enhanced",
+        "SimonSiefke.svg-preview"
+      ]
+    }
+  }
+}
