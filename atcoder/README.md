@@ -13,15 +13,10 @@ acc config default-template python
 ```json:template.json
 {
   "task": {
-    "program": ["main.cpp", ["foo.cpp", "{TaskID}.cpp"]],
-    "submit": "main.cpp",
-    "static": ["foo", ["bar","bar_{TaskLabel}"]],
-    "testdir": "tests_{TaskID}",
-    "cmd": "echo Hi!"
-  },
-  "contest": {
-    "static": [["gitignore", ".gitignore"]],
-    "cmd": "echo Ho!"
+    "program": [
+      "main.py"
+    ],
+    "submit": "main.py"
   }
 }
 ```
