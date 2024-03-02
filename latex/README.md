@@ -1,0 +1,1 @@
+When you save tex file, compile will start automatically.
