@@ -9,7 +9,7 @@
         {
             "label": "test code",
             "type": "shell",
-            "command": "cd contest/${input:ContestID}/${input:problemID} && oj t -d tests -c \"python3 main.py\"",
+            "command": "cd $(ls -d contest/*/ | tail -n 1)${input:problemID} && oj t -d tests -c \"python3 main.py\"",
         }
     ],
     "inputs": [
@@ -22,8 +22,7 @@
         {
             "type": "promptString",
             "id": "problemID",
-            "description": "Enter the problem ID",
-            "default": "a"
+            "description": "Enter the problem ID"
         }
     ]
 }
