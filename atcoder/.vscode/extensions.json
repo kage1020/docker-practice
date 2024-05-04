@@ -1,0 +1,20 @@
+{
+    "recommendations": [
+        "streetsidesoftware.code-spell-checker",
+        "ms-vscode-remote.remote-containers",
+        "ms-azuretools.vscode-docker",
+        "batisteo.vscode-django",
+        "usernamehw.errorlens",
+        "mhutchie.git-graph",
+        "github.copilot",
+        "github.copilot-chat",
+        "seatonjiang.gitmoji-vscode",
+        "oderwat.indent-rainbow",
+        "visualstudioexptteam.vscodeintellicode",
+        "ms-ceintl.vscode-language-pack-ja",
+        "donjayamanne.python-extension-pack",
+        "ms-python.vscode-pylance",
+        "sanaajani.taskrunnercode",
+        "ms-python.debugpy"
+    ]
+}

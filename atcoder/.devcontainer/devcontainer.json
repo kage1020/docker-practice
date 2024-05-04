@@ -21,7 +21,8 @@
         "MS-CEINTL.vscode-language-pack-ja",
         "donjayamanne.python-extension-pack",
         "ms-python.vscode-pylance",
-        "SanaAjani.taskrunnercode"
+        "SanaAjani.taskrunnercode",
+        "ms-python.debugpy"
       ]
     }
   }

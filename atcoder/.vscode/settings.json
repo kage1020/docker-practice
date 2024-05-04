@@ -1,5 +1,11 @@
 {
     "files.exclude": {
-        "**/.venv": true
-    }
+        "**/.venv": false
+    },
+    "cSpell.words": [
+        "functools",
+        "heapq",
+        "itertools",
+        "numpy"
+    ]
 }

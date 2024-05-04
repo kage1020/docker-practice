@@ -3,6 +3,8 @@
 1. setup atcoder-cli
 
   ```bash
+  acc login
+  oj login https://atcoder.jp/
   mkdir contest
   acc config default-task-choice all
   acc config default-contest-dirname-format contest/{ContestID}
@@ -10,6 +12,7 @@
   mkdir python
   cd python
   touch template.json
+  code template.json
   ```
 
 1. Write the following in `template.json`:
@@ -30,6 +33,7 @@
   ```bash
   touch main.py
   acc config default-template python
+  code main.py
   ```
 
   Then write the following in `python.py`:
@@ -43,4 +47,5 @@
   import operator
   import collections
   import sortedcontainers as sc
+  import heapq
   ```
